@@ -1,2 +1,5 @@
-*.log;
-*.db;
+*.log
+*.db
+
+/bin
+/target
