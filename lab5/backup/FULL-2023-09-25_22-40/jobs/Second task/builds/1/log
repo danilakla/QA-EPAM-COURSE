@@ -1,0 +1,22 @@
+Запущен изменением в SCM
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Second task
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/danilakla/forjanc.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\Second task # timeout=10
+Fetching upstream changes from https://github.com/danilakla/forjanc.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.41.0.windows.2'
+ > git.exe fetch --tags --force --progress -- https://github.com/danilakla/forjanc.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/danilakla/forjanc.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision e3ae4260273c7b58886bd6c66a8d9315cb59d5a4 (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f e3ae4260273c7b58886bd6c66a8d9315cb59d5a4 # timeout=10
+Commit message: "fix local"
+First time build. Skipping changelog.
+Finished: SUCCESS

@@ -1,0 +1,10 @@
+Started by user [8mha:////4O2ptC+c9qhkmcC7motR3E0D2mFHTgUhWxB7Wj1Vi1UDAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy5EgYe/dLi1CL9lMS8zJxEAId8vOzBAAAA[0mKartuzov Danila Alexsandrovich
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Simple Job
+[Simple Job] $ cmd /c call C:\WINDOWS\TEMP\jenkins17167384583073989457.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Simple Job>echo hello! 
+hello!
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Simple Job>exit 0 
+Finished: SUCCESS

@@ -1,0 +1,11 @@
+Started by user [8mha:////4A35KiDl5jTRF0u2LbLsJfKblnFhySMcKWBsKpmpO0FdAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgZO/dLi1CL97OJSAOR1M+2+AAAA[0mKsenya
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Simple job
+[Simple job] $ cmd /c call C:\Windows\TEMP\jenkins16451646505554626791.bat
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Simple job>ECHO Hello! 
+Hello!
+
+C:\ProgramData\Jenkins\.jenkins\workspace\Simple job>exit 0 
+Инициирую новую сборку [8mha:////4IhobJEwo+1WRZkJGTYKFFTLJ/kk9+dnXo9+u10h3m6RAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyeEgYx/az8JP3gzNyCnFRVIwMgB0ga6QMAh0dYAssAAAA=[0mSimple job 2
+Finished: SUCCESS

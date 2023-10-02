@@ -1,0 +1,10 @@
+Started by user [8mha:////4O2ptC+c9qhkmcC7motR3E0D2mFHTgUhWxB7Wj1Vi1UDAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy5EgYe/dLi1CL9lMS8zJxEAId8vOzBAAAA[0mKartuzov Danila Alexsandrovich
+Running as SYSTEM
+Building remotely on [8mha:////4FuXcQEuNIi89G/V1vK/NrLALKdITyvEa3lEYK8EGLY4AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/bTMouISABf4flDEAAAA[0mfirst (wi1) in workspace D:\app\testing\lab1\gitDemo\lab5\slave\workspace\HelloUser
+[HelloUser] $ cmd /c call C:\Users\dany\AppData\Local\Temp\jenkins16075924597792535370.bat
+
+D:\app\testing\lab1\gitDemo\lab5\slave\workspace\HelloUser>echo "Hello, ${username}!" 
+"Hello, ${username}!"
+
+D:\app\testing\lab1\gitDemo\lab5\slave\workspace\HelloUser>exit 0 
+Finished: SUCCESS

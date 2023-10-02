@@ -1,0 +1,19 @@
+Started by user [8mha:////4OH3l0RqE0FIFI5Sw++6O1LLwXb9imMv6dP67HsukGHRAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZO/dLi1CL97OJSAAx/pmq+AAAA[0mKsenya Budanowa
+Running as SYSTEM
+Собирается удаленно на [8mha:////4OkvNxhklwVk7jvjT2aWC5W2PThtdtTBQjrIrhVbTJ1fAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZJ/eT83ILSktQifRfXYO8Q/wBdA89gM183cwCn5o5izgAAAA==[0mDESKTOP-0IS6MF7 (opera win10 x64) in workspace e:\Jenkins\slave\workspace\Github job
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir e:\Jenkins\slave\workspace\Github job\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/crinanis/Epam.git # timeout=10
+Fetching upstream changes from https://github.com/crinanis/Epam.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.37.3.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/crinanis/Epam.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision d0dcbe483072adae54e16bf4ac895af701c03db5 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f d0dcbe483072adae54e16bf4ac895af701c03db5 # timeout=10
+Commit message: "Update README.md"
+ > git.exe rev-list --no-walk d0dcbe483072adae54e16bf4ac895af701c03db5 # timeout=10
+Finished: SUCCESS

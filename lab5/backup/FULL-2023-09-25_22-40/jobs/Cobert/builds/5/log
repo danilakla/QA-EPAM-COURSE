@@ -1,0 +1,61 @@
+Started by user [8mha:////4O2ptC+c9qhkmcC7motR3E0D2mFHTgUhWxB7Wj1Vi1UDAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy5EgYe/dLi1CL9lMS8zJxEAId8vOzBAAAA[0mKartuzov Danila Alexsandrovich
+Running as SYSTEM
+Building on the built-in node in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Cobert
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir C:\ProgramData\Jenkins\.jenkins\workspace\Cobert\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/danilakla/forjanc.git # timeout=10
+Fetching upstream changes from https://github.com/danilakla/forjanc.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.41.0.windows.2'
+ > git.exe fetch --tags --force --progress -- https://github.com/danilakla/forjanc.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision 495ae0fd8bce468d94424deae000bf839ddd9258 (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 495ae0fd8bce468d94424deae000bf839ddd9258 # timeout=10
+Commit message: "migration to 8 jdk"
+ > git.exe rev-list --no-walk 495ae0fd8bce468d94424deae000bf839ddd9258 # timeout=10
+[Cobert] $ cmd.exe /C "mvn cobertura:cobertura && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.github.vitalliuss.helloci:hello-ci >---------------
+[INFO] Building hello-ci 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> cobertura:2.7:cobertura (default-cli) > [cobertura]test @ hello-ci >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ hello-ci ---
+[INFO] skip non existing resourceDirectory C:\ProgramData\Jenkins\.jenkins\workspace\Cobert\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ hello-ci ---
+[INFO] Changes detected - recompiling the module! :input tree
+[INFO] Compiling 2 source files with javac [debug target 1.8] to target\classes
+[8mha:////4AsSsftk+zEsny8DkP1t/6oH6dLv4O3lmXGNg4cLFoisAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] bootstrap class path not set in conjunction with -source 8
+[8mha:////4AsSsftk+zEsny8DkP1t/6oH6dLv4O3lmXGNg4cLFoisAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] source value 8 is obsolete and will be removed in a future release
+[8mha:////4AsSsftk+zEsny8DkP1t/6oH6dLv4O3lmXGNg4cLFoisAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] target value 8 is obsolete and will be removed in a future release
+[8mha:////4AsSsftk+zEsny8DkP1t/6oH6dLv4O3lmXGNg4cLFoisAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
+[INFO] 
+[INFO] --- cobertura:2.7:instrument (default-cli) @ hello-ci ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.609 s
+[INFO] Finished at: 2023-09-25T19:16:32+03:00
+[INFO] ------------------------------------------------------------------------
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Failed to execute goal org.codehaus.mojo:cobertura-maven-plugin:2.7:instrument (default-cli) on project hello-ci: Execution default-cli of goal org.codehaus.mojo:cobertura-maven-plugin:2.7:instrument failed: Plugin org.codehaus.mojo:cobertura-maven-plugin:2.7 or one of its dependencies could not be resolved: The following artifacts could not be resolved: com.sun:tools:jar:0: Could not find artifact com.sun:tools:jar:0 at specified path C:\Program Files\Java\jdk-20/../lib/tools.jar -> [Help 1]
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginResolutionException
+Build step 'Invoke top-level Maven targets' marked build as failure
+[Cobertura] Publishing Cobertura coverage report...
+
+[Cobertura] Publishing Cobertura coverage results...
+
+[Cobertura] Cobertura coverage report found.
+
+Finished: FAILURE

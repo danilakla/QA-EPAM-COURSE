@@ -1,0 +1,136 @@
+Started by user [8mha:////4O2ptC+c9qhkmcC7motR3E0D2mFHTgUhWxB7Wj1Vi1UDAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy5EgYe/dLi1CL9lMS8zJxEAId8vOzBAAAA[0mKartuzov Danila Alexsandrovich
+Running as SYSTEM
+Building remotely on [8mha:////4FuXcQEuNIi89G/V1vK/NrLALKdITyvEa3lEYK8EGLY4AAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/bTMouISABf4flDEAAAA[0mfirst (wi1) in workspace D:\app\testing\lab1\gitDemo\lab5\slave\workspace\Cobert
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --resolve-git-dir D:\app\testing\lab1\gitDemo\lab5\slave\workspace\Cobert\.git # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/danilakla/forjanc.git # timeout=10
+Fetching upstream changes from https://github.com/danilakla/forjanc.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.41.0.windows.2'
+ > git.exe fetch --tags --force --progress -- https://github.com/danilakla/forjanc.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/main^{commit}" # timeout=10
+Checking out Revision 495ae0fd8bce468d94424deae000bf839ddd9258 (refs/remotes/origin/main)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 495ae0fd8bce468d94424deae000bf839ddd9258 # timeout=10
+Commit message: "migration to 8 jdk"
+ > git.exe rev-list --no-walk 495ae0fd8bce468d94424deae000bf839ddd9258 # timeout=10
+[Cobert] $ cmd.exe /C "mvn cobertura:cobertura && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------< com.github.vitalliuss.helloci:hello-ci >---------------
+[INFO] Building hello-ci 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> cobertura:2.7:cobertura (default-cli) > [cobertura]test @ hello-ci >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ hello-ci ---
+[INFO] skip non existing resourceDirectory D:\app\testing\lab1\gitDemo\lab5\slave\workspace\Cobert\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ hello-ci ---
+[INFO] Changes detected - recompiling the module! :input tree
+[INFO] Compiling 2 source files with javac [debug target 1.8] to target\classes
+[INFO] 
+[INFO] --- cobertura:2.7:instrument (default-cli) @ hello-ci ---
+[INFO] Cobertura 2.1.1 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
+[INFO] Cobertura: Loaded information on 2 classes.
+[INFO] Cobertura: Saved information on 2 classes.
+[INFO] Cobertura: Saved information on 2 classes.
+
+[INFO] Instrumentation was successful.
+[INFO] NOT adding cobertura ser file to attached artifacts list.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ hello-ci ---
+[INFO] skip non existing resourceDirectory D:\app\testing\lab1\gitDemo\lab5\slave\workspace\Cobert\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ hello-ci ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.0.0-M1:test (default-test) @ hello-ci ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.github.vitalliuss.helloci.AppTest
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 0.311 s <<< FAILURE! - in com.github.vitalliuss.helloci.AppTest
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] testShouldBeFailed(com.github.vitalliuss.helloci.AppTest)  Time elapsed: 0.016 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.github.vitalliuss.helloci.AppTest.testShouldBeFailed(AppTest.java:21)
+
+[INFO] Cobertura: Loaded information on 2 classes.
+[INFO] Cobertura: Saved information on 2 classes.
+[INFO] 
+[INFO] Results:
+[INFO] 
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Failures: 
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   AppTest.testShouldBeFailed:21
+[INFO] 
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Tests run: 5, Failures: 1, Errors: 0, Skipped: 1
+[INFO] 
+[8mha:////4CivjctzrSQunkWVY18meUXHTnM/gXtNRVt6fq6HP8XkAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] There are test failures.
+
+Please refer to D:\app\testing\lab1\gitDemo\lab5\slave\workspace\Cobert\target\surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[INFO] 
+[INFO] <<< cobertura:2.7:cobertura (default-cli) < [cobertura]test @ hello-ci <<<
+[INFO] 
+[INFO] 
+[INFO] --- cobertura:2.7:cobertura (default-cli) @ hello-ci ---
+[INFO] Cobertura 2.1.1 - GNU GPL License (NO WARRANTY) - See COPYRIGHT file
+[INFO] Cobertura: Loaded information on 2 classes.
+Report time: 89ms
+
+[INFO] Cobertura Report generation was successful.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.174 s
+[INFO] Finished at: 2023-09-25T17:10:50+03:00
+[INFO] ------------------------------------------------------------------------
+[Cobertura] Publishing Cobertura coverage report...
+
+FATAL: Unable to find coverage results
+java.io.IOException: Expecting Ant GLOB pattern, but saw 'D:\coverage.xml'. See https://ant.apache.org/manual/Types/fileset.html for syntax
+	at hudson.FilePath.glob(FilePath.java:2168)
+	at hudson.FilePath$ListGlob.invoke(FilePath.java:2149)
+	at hudson.FilePath$ListGlob.invoke(FilePath.java:2134)
+	at hudson.FilePath.act(FilePath.java:1198)
+	at hudson.FilePath.act(FilePath.java:1181)
+	at hudson.FilePath.list(FilePath.java:2131)
+	at hudson.FilePath.list(FilePath.java:2114)
+	at hudson.FilePath.list(FilePath.java:2098)
+	at hudson.plugins.cobertura.CoberturaPublisher$ParseReportCallable.invoke(CoberturaPublisher.java:894)
+	at hudson.plugins.cobertura.CoberturaPublisher$ParseReportCallable.invoke(CoberturaPublisher.java:883)
+	at hudson.FilePath$FileCallableWrapper.call(FilePath.java:3578)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:211)
+	at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+	at hudson.remoting.Request$2.run(Request.java:377)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at hudson.remoting.Engine$1.lambda$newThread$0(Engine.java:125)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+	Suppressed: hudson.remoting.Channel$CallSiteStackTrace: Remote call to JNLP4-connect connection from kubernetes.docker.internal/127.0.0.1:59427
+		at hudson.remoting.Channel.attachCallSiteStackTrace(Channel.java:1784)
+		at hudson.remoting.UserRequest$ExceptionResponse.retrieve(UserRequest.java:356)
+		at hudson.remoting.Channel.call(Channel.java:1000)
+		at hudson.FilePath.act(FilePath.java:1192)
+		at hudson.FilePath.act(FilePath.java:1181)
+		at hudson.plugins.cobertura.CoberturaPublisher.perform(CoberturaPublisher.java:550)
+		at jenkins.tasks.SimpleBuildStep.perform(SimpleBuildStep.java:123)
+		at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:80)
+		at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:818)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:767)
+		at hudson.model.Build$BuildExecution.post2(Build.java:179)
+		at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:711)
+		at hudson.model.Run.execute(Run.java:1925)
+		at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+		at hudson.model.ResourceController.execute(ResourceController.java:101)
+		at hudson.model.Executor.run(Executor.java:442)
+ERROR: Step ‘Publish Cobertura Coverage Report’ failed: [Cobertura] Unable to find coverage results
+Finished: FAILURE

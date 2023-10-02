@@ -1,0 +1,22 @@
+Started by user [8mha:////4OH3l0RqE0FIFI5Sw++6O1LLwXb9imMv6dP67HsukGHRAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZO/dLi1CL97OJSAAx/pmq+AAAA[0mKsenya Budanowa
+Running as SYSTEM
+Building in workspace C:\ProgramData\Jenkins\.jenkins\workspace\Github job
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/crinanis/Epam.git
+ > git.exe init C:\ProgramData\Jenkins\.jenkins\workspace\Github job # timeout=10
+Fetching upstream changes from https://github.com/crinanis/Epam.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.37.3.windows.1'
+ > git.exe fetch --tags --force --progress -- https://github.com/crinanis/Epam.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/crinanis/Epam.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision d0dcbe483072adae54e16bf4ac895af701c03db5 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f d0dcbe483072adae54e16bf4ac895af701c03db5 # timeout=10
+Commit message: "Update README.md"
+First time build. Skipping changelog.
+Finished: SUCCESS
