@@ -1,0 +1,23 @@
+|----- .idea
+ | .gitignore
+ | aws.xml
+ | jpa-buddy.xml
+ | libraries
+ | misc.xml
+ | modules.xml
+ | vcs.xml
+ | workspace.xml
+ info.txt
+ JavaBasics.iml
+|----- out
+ | production
+|----- src
+ | classes
+ | collections
+ | db.properties
+ | exceptions
+ | fundamentals
+ | io
+ | jdbc
+ | strings
+ | threads
