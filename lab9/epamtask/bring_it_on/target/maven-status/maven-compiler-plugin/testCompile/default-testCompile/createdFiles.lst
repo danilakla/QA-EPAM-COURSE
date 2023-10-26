@@ -1,0 +1,6 @@
+page\CreatedPaste.class
+waits\CustomCondition.class
+test\CreateNewPasteParametersTest.class
+page\MainPage.class
+waits\CustomCondition$1.class
+waits\CustomCondition$2.class

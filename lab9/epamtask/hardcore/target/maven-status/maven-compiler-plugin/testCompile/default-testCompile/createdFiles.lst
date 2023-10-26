@@ -1,0 +1,10 @@
+test\CalculatorResultTest.class
+waits\CustomCondition.class
+page\EmailListPage.class
+page\AbstractPage.class
+page\GenerateTmpEmailPage.class
+page\CalculatorPage.class
+page\SearchResultPage.class
+page\MainPage.class
+waits\CustomCondition$1.class
+test\CalculatorResultTest$TestValue.class
